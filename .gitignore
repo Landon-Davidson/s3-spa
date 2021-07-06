@@ -3,3 +3,7 @@
 
 # Ignore state files
 **/*.tfstate
+**/*.tfstate.*
+
+# lock files...
+**/*.terraform.lock*
