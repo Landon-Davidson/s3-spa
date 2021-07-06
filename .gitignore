@@ -1,0 +1,5 @@
+# Ignore everything in .terraform dir locally
+**/.terraform/*
+
+# Ignore state files
+**/*.tfstate
