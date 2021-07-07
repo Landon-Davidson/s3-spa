@@ -31,3 +31,9 @@ variable "routing_rules" {
     description = "JSON array of routing rules for paths in the S3 bucket."
     default = ""
 }
+
+variable "web_acl_id" {
+  type = string
+  description = "ARN of WAFv2 ACL or ID of WAFv1 ACL if desired."
+  default = ""
+}
