@@ -1,7 +1,23 @@
-variable "bucket_name" {
-    type = string
-    description = "Name for the S3 bucket."
-    default = ""
+variable "aliases" {
+    type = list(string)
+    description = "Optional alternative domain names."
+    default = []
+}
+
+variable "default_tags" {
+    type = map(any)
+    description = "Tags to add to all resources."
+    default = {}
+}
+
+variable "domain_name" {
+  type = string
+  description = "Domain name for accessing the bucket."
+}
+
+variable "environment" {
+  type = string
+  description = "Environment type (dev, staging, prod, etc.)"
 }
 
 variable "error_document" {
@@ -14,15 +30,4 @@ variable "routing_rules" {
     type = string
     description = "JSON array of routing rules for paths in the S3 bucket."
     default = ""
-}
-
-variable "default_tags" {
-    type = map(any)
-    description = "Tags to add to all resources."
-    default = {}
-}
-
-variable "environment" {
-  type = string
-  description = "Environment type (dev, staging, prod, etc.)"
 }
