@@ -1,6 +1,6 @@
 resource "aws_s3_bucket" "host" {
   bucket = local.bucket_name
-  acl    = "public-read" # assuming this is a public SPA, based off of instructions
+  acl    = "public-read" # This can be changed based on an agreement between devs, platform eng, and security.
 
   website {
     index_document = "index.html" # The instruction doc lists this as index.html (along with other web resources/imports), so leave hard-coded for now

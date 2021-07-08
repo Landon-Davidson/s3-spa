@@ -1,11 +1,16 @@
 # S3 + Cloudfront SPA
 <img src="https://raw.githubusercontent.com/Landon-Davidson/s3-spa/a76d03a67a2a7b00aa835894f4dbbb659374a8f2/extra_assets/Platform_FTE_Exercise_Architecture.svg">
 
+## Running the example
+```zsh
+cd ./example
+```
+Provide AWS credentials using a secrets management tool or one of the techniques listed [here](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#authentication).  
+Assuming that you have set the credentials in your default program in `$HOME/.aws/credentials`, simply run:  
+```zsh
+terraform apply -var-file dev.tfvars
+```
 <!-- BEGIN_TF_DOCS -->
-## Requirements
-
-No requirements.
-
 ## Providers
 
 | Name | Version |
