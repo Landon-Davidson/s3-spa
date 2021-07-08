@@ -1,5 +1,5 @@
 # S3 + Cloudfront SPA
-<img src="https://github.com/Landon-Davidson/s3-spa/extra_assets/Platform_FTE_Exercise_Architecture.svg">
+<img src="https://raw.githubusercontent.com/Landon-Davidson/s3-spa/a76d03a67a2a7b00aa835894f4dbbb659374a8f2/extra_assets/Platform_FTE_Exercise_Architecture.svg">
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
