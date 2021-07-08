@@ -1,6 +1,6 @@
 # Use the route53 zone that is automatically created when registering the domain
 data "aws_route53_zone" "main" {
-  name         = var.domain_name
+  name = var.domain_name
 }
 
 resource "aws_route53_record" "web" {

@@ -13,9 +13,9 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   comment             = "${local.bucket_name} bucket for ${var.environment} env."
   default_root_object = "index.html"
 
-#   logging_config {
-#     TODO.... should be configured as part of module, no time now
-#   }
+  #   logging_config {
+  #     TODO.... should be configured as part of module, no time now
+  #   }
 
   aliases = concat([var.domain_name], var.aliases)
 
@@ -52,7 +52,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
 
   viewer_certificate {
     acm_certificate_arn = aws_acm_certificate.cert.arn
-    ssl_support_method = "sni-only"
+    ssl_support_method  = "sni-only"
   }
 
   web_acl_id = var.web_acl_id
